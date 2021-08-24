@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>create sms</title>
+  {% include 'head.html' %}
+</head>
+<body>
+  <header class="site-navbar mt-3">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <nav class="mx-auto site-navigation" style="background-color: blue;">
+          <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
+            <li><a href="{% url 'jobapp:homepage' %}" class="nav-link">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="{% url 'jobapp:job-list' %}">Applicants Details</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <br><br><br>
+<div class="container">
+  <h1 class='text-center'>Create sms Using Form Below</h1>
+  <div class="row">
+    <div class="col-sm-6 offset-sm-3">
+      <form action="" method="post">
+        {% csrf_token %}
+        {% for field in form %}
+        <div class="form-group">
+          {{ field.errors }}
+          {{ field.label_tag }}
+          {{ field }}
+        </div>
+        {% endfor %}
+        
+        <input type="submit" value="send" class='btn btn-primary'>
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

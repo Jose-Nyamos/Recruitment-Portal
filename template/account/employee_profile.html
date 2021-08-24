@@ -1,0 +1,31 @@
+{% extend 'base.html' %}
+{% load static %}
+{% block content %}
+<style>
+    .profile_pic{
+        max-width: 200px;
+        max-height: 200px;
+        margin: 0 auto;
+        border-radius: 50%;
+    }
+</style>
+<br>
+<div class="row">
+    <div class="col-md-3">
+        <div class="card card-body" >
+            <h3 style="text-align: centre;">Profile information</h3>
+            <img class = "profile_pic" src="{{request.user.profile_pic.url}}" alt="">
+        </div>
+    </div>
+    <div class="col-md-9">
+        <div class="card card-body" >
+            <form action="" method="post" enctype="multipart/form-data">
+              {% crsf_token %}
+              {{ form.as_p }} 
+                <input class = "b tn btn-primary" type="submit" name="Update Information">
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

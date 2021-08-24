@@ -1,0 +1,380 @@
+Likoni sub county
+Mombasa sub county
+Nyali sub county
+Kisauni sub county
+Changamwe sub county
+Jomvu sub county
+Kwale county -002
+Matuga sub county
+Kinango sub county
+LungaLunga sub county
+Msambweni sub county
+Kilifi county -003
+Ganze sub county
+Rabai sub county
+Malindi sub county
+Kaloleni sub county
+Magarini sub county
+Kilifi north sub county
+Kilifi south sub county
+Tana River county -004
+Tana River sub county
+Tana delta sub county
+Tana North sub county
+Lamu county -005
+Lamu East sub county
+Lamu West sub county
+Taita Taveta county -006
+Voi sub county
+Taita sub county
+Taveta sub county
+Mwatate sub county
+Sub counties in Kenya: North Eastern region
+Garissa county -007
+Garissa sub county
+Lagdera sub county
+Fafi sub county
+Dadaab sub county
+Ijara sub county
+Hulugho sub county
+Balambala sub county
+Wajir county -008
+Wajir East sub county
+Wajir North sub county
+Wajir South sub county
+Wajir West sub county
+Eldas sub county
+Buna sub county
+Tarbaj sub county
+Habaswein sub county
+Mandera county -009
+Mandera East sub county
+Lafey sub county
+Mandera West sub county
+Mandera Central sub county
+Mandera North sub county
+Banisa sub county
+Kotulo sub county
+Marsabit county -010
+Marsabit central sub county
+Marsabit south /Laisamis sub county
+Sololo sub county
+North Horr sub county
+Loyangalani sub county
+Moyale sub county
+Marsabit North / Chalbi sub county
+Isiolo county -011
+Garbatulla sub county
+Isiolo sub county
+Merti sub county
+Sub counties in Kenya: Eastern region
+Meru county -012
+Imenti North sub county
+Buuri sub county
+Meru central sub county
+Imenti south sub county
+Igembe North sub county
+Igembe Central sub county
+Igembe South sub county
+Tigania east sub county
+Tigania central sub county
+Tigania West sub county
+Tharaka Nithi county -013
+Maara sub county
+Meru south sub county
+Tharaka North sub county
+Tharaka South sub county
+Embu county -014
+Embu west sub county
+Embu East sub county
+Embu North sub county
+Mbeere North sub county
+Mbeere south sub county
+Kitui county -015
+Kitui Central sub county
+Kisasi sub county
+Mutitu sub county
+Nzambani sub county
+Kitui West sub county
+Matinyani sub county
+Mutomo sub county
+Ikutha sub county
+Migwani / Mwingi west sub county
+Mwingi east sub county
+Mwingi central sub county
+Mumoni sub county
+Tseikuru sub county
+Kyuso sub county
+Lower Yatta sub county
+Katulani sub county
+Machakos county -016
+Machakos sub county
+Athi River sub county
+Kangundo sub county
+Matungulu sub county
+Kathiani sub county
+Mwala sub county
+Masinga sub county
+Yatta sub county
+Makueni county -017
+Kibwezi sub county
+Makindu sub county
+Mbooni east sub county
+Mbooni west sub county
+Kilungu sub county
+Mukaa sub county
+Makueni sub county
+Kathonzweni sub county
+Nzaui sub county
+Sub counties in Kenya: Central Kenya region
+Nyandarua county -018
+Mirangine sub county
+Nyandarua west sub county
+Nyandarua south sub county
+Kinangop sub county
+Nyandarua central sub county
+Kipipiri sub county
+Nyandarua north sub county
+Nyeri county -019
+Kieni East sub county
+Nyeri central sub county
+Nyeri south sub county
+Mukurweini sub county
+Mathira East sub county
+Mathira West sub county
+Tetu sub county
+Kieni West sub county
+Kirinyaga county -020
+Kirinyaga west sub county
+Kirinyaga central sub county
+Kirinyaga east sub county
+Mwea west sub county
+Mwea East sub county
+Murang’a county -021
+Kahuro sub county
+Kigumo sub county
+Murang’a east sub county
+Kandara sub county
+Kangema sub county
+Mathioya sub county
+Gatanga sub county
+Murang’a south sub county
+Kiambu county -022
+Githunguri sub county
+Ruiru sub county
+Juja sub county
+Limuru sub county
+Lari sub county
+Kiambaa sub county
+Kiambu East sub county
+Kikuyu sub county
+Kabete sub county
+Gatundu South sub county
+Gatundu North sub county
+Thika East sub county
+Thika West sub county
+Sub counties in Kenya: Rift valley region
+Turkana county -023
+Turkana central sub county
+Turkana west sub county
+Turkana south sub county
+Turkana east sub county
+Turkana north sub county
+Loima sub county
+Kibish sub county
+West Pokot county -024
+Pokot central sub county
+Pokot North sub county
+Kipkomo sub county
+Pokot South sub county
+West Pokot sub county
+Samburu county -025
+Samburu central sub county
+Samburu East sub county
+Samburu North sub county
+Trans Zoia county -026
+Trans Zoia west sub county
+Kiminini sub county
+Kwanza sub county
+Endebess sub county
+Trans Zoia east sub county
+Uasin Gishu county -027
+Eldoret west /Turbo sub county
+Soy sub county
+Eldoret east /Ainabkoi sub county
+Moiben sub county
+Kesses sub county
+Eldoret south /Wareng (Kapsaret) sub county
+Elgeyo Marakwet county -028
+Keiro North sub county
+Keiyo South sub county
+Marakwet West sub county
+Marakwet East sub county
+Nandi county -029
+Chesumei sub county
+Nandi central sub county
+Tinderet sub county
+Nandi East sub county
+Nandi south (Aldai) sub county
+Nandi north sub county
+Baringo county -030
+Marigat sub county
+Baringo central sub county
+Pokot East sub county
+Baringo north sub county
+Koibatek sub county
+Mogotio sub county
+Laikipia county -031
+Laikipia North sub county
+Laikipia West sub county
+Laikipia Central sub county
+Laikipia East sub county
+Nyahururu sub county
+Nakuru county -032
+Naivasha sub county
+Gilgil sub county
+Kuresoi south sub county
+Kuresoi North sub county
+Molo sub county
+Subukia sub county
+Nakuru North sub county
+Njoro sub county
+Nakuru East sub county
+Nakuru west sub county
+Rongai sub county
+Narok county -033
+Narok North sub county
+Narok East sub county
+Narok south sub county
+Narok west sub county
+Transmara west sub county
+Transmara east sub county
+Kajiado county -034
+Kajiado Central sub county
+Isinya sub county
+Mashuru sub county
+Kajiado North sub county
+Kajiado west sub county
+Loitoktok sub county
+Kericho county -035
+Kericho east sub county
+Soin /Sigowet sub county
+Kipkelion sub county
+Belgut sub county
+Bureti sub county
+Londiani sub county
+Bomet county -036
+Bomet central sub county
+Bomet East sub county
+Konoin sub county
+Chepalungu sub county
+Sotik sub county
+Sub counties in Kenya: Western region
+Kakamega county -037
+Khwisero sub county
+Kakamega south sub county
+Kakamega central sub county
+Kakamega east sub county
+Butere sub county
+Mumias west sub county
+Mumias east sub county
+Kakamega north sub county
+Lugari sub county
+Matete sub county
+Likuyani sub county
+Matungu sub county
+Navakholo sub county
+Vihiga county -038
+Emuhaya sub county
+Luanda sub county
+Vihiga sub county
+Sabatia sub county
+Hamisi sub county
+Bungoma county -039
+Bungoma south sub county
+Bumula sub county
+Kimilili sub county
+Bungoma west sub county
+Bungoma north sub county
+Bungoma central sub county
+Cheptais sub county
+Mt Elgon sub county
+Bungoma east sub county
+Webuye west sub county
+Vihiga county -040
+Busia sub county
+Nambale sub county
+Bunyala sub county
+Samia sub county
+Teso North sub county
+Teso South sub county
+Butula sub county
+Siaya county -041
+Gem sub county
+Siaya sub county
+Bondo sub county
+Rarieda sub county
+Ugenya sub county
+Ugunja sub county
+Sub counties in Kenya: Nyanza region
+Kisumu county -042
+Kisumu west sub county
+Seme sub county
+Kisumu east sub county
+Kisumu central sub county
+Nyando sub county
+Nyakach sub county
+Muhoroni sub county
+Homa bay county -043
+Homa bay sub county
+Rangwe sub county
+Ndhiwa sub county
+Suba sub county
+Mbita sub county
+Rachuonyo south sub county
+Rachuonyo east sub county
+Rachuonyo north sub county
+Migori county -044
+Rongo sub county
+Uriri sub county
+Kuria West sub county
+Kuria East sub county
+Suna East sub county
+Suna West sub county
+Nyatike sub county
+Awendo sub county
+Kisii county -045
+Kisii central sub county
+Kitutu central sub county
+Marani sub county
+Masaba south sub county
+Nyamache sub county
+Kenyenya sub county
+Gucha sub county
+Kisii south sub county
+Gucha south sub county
+Sameta sub county
+Nyamira county -046
+Nyamira south sub county
+Nyamira north sub county
+Borabu sub county
+Manga sub county
+Masaba north sub county
+Sub counties in Nairobi region (Nairobi is county number 047)
+Langata sub county
+Kibra sub county
+Westlands sub county
+Starehe sub county
+Mathare sub county
+Kasarani sub county
+Makadara sub county
+Roysambu sub county
+Kamukunji sub county
+Ruaraka sub county
+Dagoretti North
+Dagoretti South
+Embakasi South
+Embakasi North
+Embakasi Central
+Embakasi East
+Embakasi West

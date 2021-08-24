@@ -1,0 +1,107 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Outbox </title>
+  {% include 'head.html' %}
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="site-navbar mt-3">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <nav class="mx-auto site-navigation" style="background-color: blue;">
+          <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
+            <li><a href="{% url 'jobapp:homepage' %}" class="nav-link">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="{% url 'jobapp:job-list' %}">List of Vacancies</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <br><br><br>
+
+<div class="container">
+  <h2 class='text-center'>Welcome to Sms App !</h2> 
+  <div class="row">
+    <div class="col-md-2">
+      <div class="list-group">
+        <a href="{% url 'outbox' %}?clicked=outbox" class="list-group-item list-group-item-action {% if active == 'outbox' %}active{% endif %}">
+          Outbox
+        </a>
+        <a 
+        href="{% url 'smsapp:delivery_reports' %}?clicked=deliveryreports" 
+        class="list-group-item list-group-item-action {% if active == 'deliveryreports' %}active{% endif %} "> Delivery reports
+        </a>
+        <a href="{% url 'smsapp:inbox' %}?clicked=inbox" class="list-group-item list-group-item-action {% if active == 'inbox' %}active{% endif %}">
+        Inbox
+        </a>   
+      </div> 
+    </div>
+    <div class="col-sm-8">
+      <a
+          href="{% url 'smsapp:create_sms' %}"
+          class="btn btn-success"
+          style="margin-bottom: 5px">Create sms
+      </a>
+      <form class="form-inline my-2 my-lg-1 float-right">
+        <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+            name='search'
+            value="{{search_term}}">
+        <input type="hidden" name="clicked" value="outbox">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+      <table class="table table-striped mb-4">
+        <thead class="thead-inverse">
+          <tr>
+            <th>messageId</th>
+            <th>Text</th>
+            <th>To</th>
+          </tr>
+        </thead>
+        <tbody>
+        {% for sms in outbox %}
+        <tr>
+          <td class="align-middle">{{ sms.messageId }}</td>
+          <td class="align-middle">{{ sms.text|truncatechars:20 }}</td>
+          <td class="align-middle">{{ sms.phone }}</td>
+        </tr>
+        {% empty %}
+        <tr>
+          <td colspan="6" class="text-center bg-white">No message sent, start by clicking the create sms button above</td>
+        </tr>
+        {% endfor %}
+       </tbody>
+      </table>
+      <div class="mx-auto" style="width:200px;">
+        <div class="pagination">
+         <span class="step-links">
+           {% if outbox.has_previous %}
+               <a href="?page=1&clicked=outbox">&laquo; first</a>
+               <a href="?page={{ outbox.previous_page_number }}&clicked=outbox">previous</a>
+           {% endif %}
+              <span class="current">
+                  Page {{ outbox.number }} of {{ outbox.paginator.num_pages }}.
+              </span>
+           {% if outbox.has_next %}
+              <a href="?page={{ outbox.next_page_number }}&clicked=outbox">next</a>
+              <a href="?page={{ outbox.paginator.num_pages }}&clicked=outbox">last &raquo;</a>
+           {% endif %}
+         </span>
+        </div>
+       </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

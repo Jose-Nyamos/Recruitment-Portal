@@ -1,0 +1,192 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% load widget_tweaks %}
+{% load humanize %}
+
+{% block content %}
+
+
+<!-- HOME -->
+<head>
+  <link rel="stylesheet" href="{% static 'bootstrap3/boot.css' %}">
+  <link rel="stylesheet" href="{% static  'profile_style/style.css' %}">
+</head>
+<section class="section-hero overlay inner-page bg-image">
+  <div class="container-fluid">
+</section> 
+<body>
+<div class="card_profile">
+        <div class="position-relative">
+            <div class="profile-img">
+            {% if user.profile.profile_picture %}
+            <img src="{{user.profile.profile_picture.url}}" class="avatar img-circle img-thumbnail" alt="avatar">
+            {% else %}
+            <img src="{% static 'images/default_profile_picture.png' %}" class="avatar img-circle img-thumbnail" alt="avatar">
+            <h6>Profile photo...</h6>
+            {% endif %}
+                <div>
+                  <b><h2 style="font-family: monospace;">{{user.first_name|capfirst}}  {{user.last_name|capfirst}} {{user.profile.surname|capfirst}}</h2></b> 
+                </div>
+            </div>
+        </div>
+        <div></div>
+            <form action="{% url 'account:edit-profile' request.user.id %}">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3">
+                        <b><label>ID NUMBER:</label></b>
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        <label>{{user.profile.idnumber}}</label>
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        <b><label>PHONE NUMBER:</label></b>
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        <label>{{user.profile.phone_number}}</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3 col-sm-3">
+                        <b><label>EMAIL:</label></b>
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        <label>{{user.email}}</label>
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        <b><label>TRIBE:</label></b>
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        <label>{{user.profile.Tribe}}</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3 col-sm-3">
+                        <b><label>COUNTY:</label></b>
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        <label>{{user.profile.county}}</label>
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        <b><label>SUB COUNTY:</label></b>
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        <label>{{user.profile.subcounty}}</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3 col-sm-3">
+                        <b><label>DIVISION:</label></b>
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        <label>{{user.profile.Division}}</label>
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        <b><label>GRADE:</label></b>
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        <label>{{user.profile.mean_grade}}</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3 col-sm-3">
+                        <b><label>ID FRONT</label></b>
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                            {% if user.profile.id_front %}
+                            <div class="panel-body"><a href="{{user.profile.id_front.url}}"> Front</a></div>
+                            {% endif %}
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        <b><label>ID BACK:</label></b>
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        {% if user.profile.id_back %}
+                        <div class="panel-body"><a href="{{user.profile.id_back.url}}">Back</a></div>
+                        {% endif %}
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3 col-sm-3">
+                        <b><label>K.C.S.E CERTIFICATE:</label></b>
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        {% if user.profile.ksce_cert %}
+                        <div class="panel-body"><a href="{{user.profile.ksce_cert.url}}">K.S.C.E</a></div>
+                        {% endif %}
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        <b><label>RESUME:</label></b>
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        {% if user.profile.resume %}
+                        <div class="panel-body"><a href="{{user.profile.resume.url}}"> Resume</a></div>
+                        {% endif %}
+                    </div>
+                </div> 
+                <div class="row">
+                    <div class="col-md-3 col-sm-3">
+                    <b><label>DATE OF BIRTH</label></b>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <label>{{user.profile.date_of_birth}}</label>
+                </div> 
+                <div class="col-md-3 col-sm-3">
+                    <b><label>COLLEGE</label></b>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <label>{{user.profile.college}}</label>
+                </div>  
+                </div> 
+                <div class="row">
+                    <div class="col-md-3 col-sm-3">
+                        <b><label>COURSE</label></b>
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        <label>{{user.profile.course}}</label>
+                    </div> 
+                </div>
+                  <div class="row">
+                  <div class="col-md-4">
+                    <a href="{% url 'account:edit-profile' request.user.id %}" class="btn btn-primary mb-4">
+                       Edit or Create Your Profile</a>
+                  </div>
+                </div>
+            </form>
+            <!-- {% if user.profile.resume %}
+            <img src="{{ user.profile.qrcode.url }}" alt="Event QR code" />
+            {% endif %} -->
+            <!-- <div class="col-md-12"> -->
+                <!-- <form method="POST"  enctype="multipart/form-data"  class="p-4 border rounded"  action = "">
+                  
+                  {% csrf_token %}
+                  {{form|crispy }}
+                <br><br>
+                  <div class="row form-group">
+                    <div class="col-md-12">
+                      <input type="submit" value="Update" class="btn px-4 btn-primary text-white">
+                    </div>
+                  </div>
+                </form> -->
+              <!-- </div> -->
+</div>
+    </div>      
+</body>
+</div>
+<script>
+    $("#form").hide()
+    $("#btn").click(function () {
+        $("#form").toggle(1000)
+    })
+</script>
+<script src="{% static 'profile_style/bootstrap5/bootstrap-5.0.2-dist/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'profile_style/bootstrap5/bootstrap-5.0.2-dist/js/bootstrap.js' %}"></script>
+
+{% endblock %}
+
+
